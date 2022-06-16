@@ -1,0 +1,55 @@
+// Seperate the pizza qualities from what can be done to the pizza via classes.
+// work in progress 
+
+public static class MenuItem {
+  private String size;
+  private String crust;
+  private String style;
+  // add other MenuItem qualities
+
+  private Pizza(OrderService os) {
+    this.size = os.size;
+    this.crust = os.crust;
+    this.style = os.style;
+  } 
+  private Wings(OrderService os) {
+    // can also inherit MenuItem instances 
+  }
+
+  public static class OrderService {
+    private String size;
+    private String crust;
+    private String topping;   //would need to be array or enum 
+    // setters to change items
+    MenuItem build() {
+      return new MenuItem(this);
+    }
+    
+  }
+}
+
+public static void main(String[] args) {
+    createOrder();
+}
+
+// not right. Just jotting down. Here's createOrder()
+List<> order = new ArrayList<>();
+
+while(!submitted) {
+  order72 = order.add.MenuItem.Pizza     // append/add/put for ArrayList?
+                     .setSize("Small")
+                     .setCrust("Thin")
+                     .addTopping("Pineapple")
+                     .build();
+  isSubmitted??();
+}
+
+// When an order gets finalized the entire order
+// should be a new HashMap entry where <K, V> is 
+// <CustomerInformation, OrderInformation>. 
+
+// Kitchen "Makeline" screen would immediately enqueue the order info.
+// Chef would dequeue the items via controller as he finished them. 
+
+// Once the values from an entire map entry are dequeued,
+// the entry information is formatted to be printed onto a ticket. 
