@@ -1,0 +1,7 @@
+// Seperate the pizza qualities from what can be done to the pizza via inner classes.
+
+
+class Pizza {
+  
+}
+.....
